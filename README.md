@@ -16,16 +16,20 @@
 
 ## Start
 
+开发环境: Mac + Chrome78
+
+chromedriver: https://sites.google.com/a/chromium.org/chromedriver/downloads
+
 ```
 pip install --user pipenv
-pipenv install --python 3
+python -m pipenv install --python 3
 # 扫码登录获取cookies
-pipenv run python login.py
+python -m pipenv run python login.py
 
 # 修改爬取文件存放的位置, 例如word.py中设置save_path
 save_path = '/Users/mac/Downloads/docer/word/'
 # 爬取word
-pipenv run python word.py
+python -m pipenv run python crawler.py
 
 ```
 
